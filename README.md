@@ -1,18 +1,28 @@
-## Getting Started
+Sistema de Gerenciamento de Consultas Médicas
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto simula um sistema de gerenciamento de consultas médicas. A aplicação permite o registro de médicos, pacientes e consultas, e também gera relatórios sobre os atendimentos realizados. O sistema foi desenvolvido utilizando Java e segue princípios de orientação a objetos.
 
-## Folder Structure
+Funcionalidades:
+Cadastro de médicos.
+Cadastro de pacientes.
+Registro de consultas.
+Geração de relatórios sobre consultas realizadas.
 
-The workspace contains two folders by default, where:
+Estrutura do Projeto
+O projeto é composto pelas seguintes classes principais:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Medico: Representa um médico com nome e especialidade.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Paciente: Representa um paciente com nome, CPF, idade e telefone.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Agenda: Gerencia as consultas de um médico, incluindo data da consulta e a lista de pacientes.
 
-## Dependency Management
+Main: Classe principal que contém o ponto de entrada do programa.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Como Executar
+Pré-requisitos
+Ter o Java 8 ou superior instalado em sua máquina.
+Uma IDE para Java (como Eclipse, IntelliJ ou VS Code) ou pode ser executado diretamente pelo terminal.
+
+
+
