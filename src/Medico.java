@@ -1,23 +1,34 @@
 public class Medico {
     private String nome;
-    private String especialidade; 
+    private String especialidade;
+    private String horarioInicio;
+    private String horarioFim;
 
-    public Medico(String nome, String especialidade){
+    public Medico(String nome, String especialidade, String horarioInicio, String horarioFim) {
         this.nome = nome;
         this.especialidade = especialidade;
+        this.horarioInicio = horarioInicio;
+        this.horarioFim = horarioFim;
     }
-    public String getNome(){
+
+    public String getNome() {
         return nome;
     }
-    public void setNome(String nome){
-        this.nome = nome;
-    }
-    public String getEspecialidade(){
+
+    public String getEspecialidade() {
         return especialidade;
     }
-    public void setEspecialidade(String especialidade){
-        this.especialidade = especialidade;
+
+    public String getHorarioInicio() {
+        return horarioInicio;
     }
-    
-    
+
+    public String getHorarioFim() {
+        return horarioFim;
+    }
+
+    @Override
+    public String toString() {
+        return "Dr. " + nome + " - " + especialidade + " (Atende das " + horarioInicio + " às " + horarioFim + ")";
+    }
 }
